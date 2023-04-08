@@ -18,6 +18,14 @@ PythonでTweetするモジュールです。
 
 ## どう使いますか？
 
+### dependencies
+
+**requests**と**requests_oauthlib**がインストールされている必要があります。
+
+```bash
+pip install requests requests_oauthlib
+```
+
 ### Twitterの認情報をjson形式でファイルに保存します。
 
 ```json
@@ -32,10 +40,10 @@ PythonでTweetするモジュールです。
 
 ### ツイートしたいプロジェクトの直下にgit cloneします。
 
-プロジェクトのほうでは`pytweet/`を.gitignoreしておくと良いです。
+プロジェクトのほうでは`pytweet/`を.gitignoreしておくと良いかも？
 
 ```git
-git clone ~~~~
+git clone https://github.com/zenryokukun/pytweet.git
 ```
 
 ### importして使います。
