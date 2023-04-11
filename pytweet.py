@@ -4,7 +4,6 @@ Twitterに投稿するスクリプト。tweet(msg:str,*img_paths)。
 
 from requests_oauthlib import OAuth1Session as session
 import json
-from pathlib import Path
 from pprint import pprint
 
 # ツイート用URL v2対応
@@ -12,9 +11,6 @@ URL_TWEET = "https://api.twitter.com/2/tweets"
 
 # 画像アップロードURL まだv2がリリースされていないので、v1.1のまま使えとのこと。　
 URL_IMAGE = "https://upload.twitter.com/1.1/media/upload.json"
-
-# Confidentialファイルパス
-CONF_FILEPATH = Path(__file__).parent / "twitter_conf.json"
 
 
 class Pytweet:
